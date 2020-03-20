@@ -1,0 +1,269 @@
+body {
+  background-color: #fcfabd;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+
+}
+.nav ul li{
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 70px;
+  height: 20px;
+  padding: 12px 14px;
+}
+
+.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  display: inline;
+}
+
+.nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+a:link {
+  color: blue;
+}
+a:hover {
+  background-color: lightsalmon;
+}
+a:visited {
+  color: blueviolet;
+}
+
+ol li {
+  display: block !important;
+  margin-bottom: 10px;
+}
+h2, h3 {
+  color: black;
+  font-family: monospace;
+  font-weight:bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2{
+  align-self: center;
+}
+
+h3 {
+  width: auto;
+}
+
+p{
+  padding-left: 30px;
+}
+
+p strong {
+  color: red;
+  text-decoration: underline;
+}
+
+a img {
+  padding: 10px;
+}
+
+ol li em {
+  color: white;
+  text-decoration:underline;
+  background-color: red;
+}
+
+li {
+  color: black;
+  font-family:sans-serif;
+}
+
+em {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.flex {
+  display: flex;
+  clear: both;
+}
+main {
+  background-color: white;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px 10px;
+}
+
+/* Classes for hiding text and error msg displays */
+.error_msg {
+  display: inline-block;
+  color: #f18018;
+  padding-left: 160px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hidden{
+  display: none;
+}
+
+.current_page {
+  font-weight: bold;
+  background-color: orange;
+  border-color: white;
+  border-style: solid;
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+}
+/* Interest Form */
+#interestForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adding spaces between elements */
+#interestForm div {
+  margin-top: 10px;
+}
+
+/* Aligning labels for best user legibility */
+#interestForm label {
+  width: 150px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+#interestForm input {
+  width: 500px;
+  margin-left: 10px;
+}
+#interestForm .input-pair {
+  display: flex;
+  flex-direction: row;
+}
+
+#interestForm select {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox input{
+  margin-left: 170px !important;
+  width: 20px !important;
+}
+.checkbox label{
+  text-align: left !important;
+  margin-left: 10px;
+}
+
+/* #interestForm button.submit {
+  /*margin-left: 225px;*/
+  /* margin-top: 15px;
+  align-self: center;
+  width: 100px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid green;
+  color: black;
+} */ */
+
+
+button:hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #interestForm .input-pair {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #interestForm input {
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  #interestForm label {
+  width: 500px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  }
+
+  .error_msg {
+  display: inline-block;
+  color: #f18018;
+  padding-left: 10px;
+  font-size: 14px;
+  }
+
+  .checkbox {
+  display: flex;
+  flex-direction: column;
+  }
+  .checkbox input{
+  margin-left: 10px !important;
+  width: 15px !important;
+  }
+  .checkbox label{
+  text-align: left !important;
+  margin-left: 1px;
+  }
+  html {
+    background-color: white;
+    transition-property: background-color;
+    font-size: 100%;
+  }
+  .nav ul li {
+    display: block;
+    width:80%;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  img.banner {
+    width: 100%;
+    height: auto;
+  }
+  img.large{
+    width: 100%;
+    height: auto;
+  }
+  img.medium-wide{
+    width: 100%;
+    height: auto;
+  }
+  img.medium {
+    width:100%;
+    height: auto;
+  }
+
+  h2 span{
+    position: absolute;
+    top: 30%;
+    left:0;
+    color: black;
+    background-color: white;
+    opacity: .6;
+    font-size: 15px;
+  }
+
+}
